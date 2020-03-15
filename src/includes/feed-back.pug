@@ -1,0 +1,25 @@
+section.feed-back
+	#feedBack.anchor
+	.feed-back-wrapper
+		.title
+			h2.decorate Свяжитесь с нами
+				p Позвольте нашим переводчикам помочь Вам достигнуть <br/> большого количества геймеров во всем мире!
+		.container
+			form(action="")
+				div
+					.file-wrapper
+						include file-upload.pug
+				div
+					input(type="text" placeholder="Ваше имя / название вашей компании*")
+					input(type="email" placeholder="E-mail*")
+					input(type="text" placeholder="Название вашей игры")
+					textarea(name="", placeholder="Расскажите что бы вы хотели")
+					include re-capthca.pug
+					.feed-back-footer
+						.controls
+							input(type="checkbox" id="check-ui" name="check-ui")
+							label(for="check-ui")
+								span.small Отправляя форму вы соглашаетесь с 
+								a(href="").small политикой конфиденциальности
+						button(type="submit").btn.btn__start Заказать услугу
+							span.btn.btn__end

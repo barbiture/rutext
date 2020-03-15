@@ -1,0 +1,29 @@
+@import './fonts.css';
+:root {
+	--color-gray-alpha: #00000043;
+	--color-light-gray-alpha: #0000000F;
+	--color-white-alpha: #FFFFFF1A;
+	--color-bright-cerulean-alpha: #27A2DF33;
+	--color-bright-cerulean-alpha-havy: #27A2DF33;
+	--color-bright-navy-blue-alpha: #1C7ED6B2;
+	--color-red-alpha: #FA4B4BB2;
+	--color-red: #FA4B4B;
+	--color-white: #FFFFFF;
+	--color-gunmetal: #2B363C;
+	--color-nickel: #707070;
+	--color-yankees-blue: #102834;
+	--color-bright-navy-blue: #1C7ED6;
+	--color-gray-blue: #8B97A4;
+	--color-denim: #1485D3;
+	--color-nan-blue: #3871D0;
+	--color-bright-cerulean: #25A9E1;
+	--color-registration-black: #000;
+	--color-anti-flash-white: #F0F0F1;
+	--color-azureish-white-hight: #DAE2F2;
+	--color-davys-grey: #53565C;
+	--color-glitter: #E6EEFF;
+	--color-azureish-white: #DCE7F7;
+	--color-white: #fff;
+	--color-footer: #112E3C;
+};
+

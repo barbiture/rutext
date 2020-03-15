@@ -1,0 +1,120 @@
+@import './styles/reset.css';
+@import './styles/var.css';
+
+@import './styles/ui.css';
+@import './styles/tile.css';
+@import './styles/title.css';
+@import './styles/services-icon.css';
+@import './styles/file-upload.css';
+@import './styles/controls.css';
+@import './styles/inputs.css';
+@import './styles/language.css';
+@import './styles/header.css';
+@import './styles/services.css';
+@import './styles/localization.css';
+@import './styles/exp.css';
+@import './styles/pj.css';
+@import './styles/feed-back.css';
+@import './styles/re-captcha.css';
+@import './styles/about.css';
+@import './styles/footer.css';
+body {
+	width: 100vw;
+	height: 100%;
+	font-family: var(--regType);
+}
+.container {
+	max-width: 1220px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 25px;
+	box-sizing: border-box;
+}
+.row {
+	/*margin: 0 -25px;*/
+}
+section.dark {
+	color: var(--color-white);
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 100px 0;
+	background-color: var(--color-yankees-blue);
+	&:after,
+	&:before {
+		position: absolute;
+		content: '';
+		height: 100px;
+		width: 100vw;
+		background-position: 50%;
+		left: 0;
+		z-index: 1;
+	}
+	&:after {
+		bottom: -100px;
+		background-image: url(./assets/images/section-bottom.png);
+	}
+	&:before {
+		top: -100px;
+		background-image: url(./assets/images/section-top.png);
+	}
+}
+.list-style {
+	li {
+		position: relative;
+		padding-left: 42px;
+		padding-bottom: 15px;
+		&:before {
+			content: '';
+			background: url(./assets/images/check.svg);
+			width: 17px;
+			height: 17px;
+			top: 3px;
+			left: 5px;
+			display: block;
+			position: absolute;
+			filter: invert(50%) sepia(24%) saturate(2554%) hue-rotate(173deg) brightness(83%) contrast(100%);
+			background-repeat: no-repeat;
+		}
+	}
+}
+.anchor {
+	position: absolute;
+	top: -100px;
+	height: 0;
+}
+.style-blue {
+	color: var(--color-bright-navy-blue);
+	font-size: inherit;
+	font-family: inherit;
+}
+button {
+	background-color: transparent;
+	border: none;
+}
+.fb-find-us {
+	background-color: var(--color-white);
+	border-radius: 6px;
+	padding: 15px;
+	width: 160px;
+	display: block;
+	img {
+		display: block;
+	}
+}
+.hide-sm {
+	font-size: inherit;
+	font-family: inherit;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+	.decorate::before {
+		top: 27px;
+	}
+  
+  .hide-sm {
+    display: none;
+  }
+  .container {
+  	padding: 0 10px;
+  }
+  
+}

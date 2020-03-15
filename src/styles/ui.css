@@ -1,0 +1,43 @@
+button {
+	background: transparent;
+}
+.btn {
+	border: none;
+	font-size: 15px;
+	font-family: var(--regTypeSemiBold);
+	border-radius: 2px;
+	text-align: center;
+	color: var(--color-white);
+	background: linear-gradient(-45deg, var(--color-nan-blue), var(--color-bright-cerulean), var(--color-red), var(--color-nan-blue));
+	background-size: 600%;
+	text-transform: uppercase;
+	cursor: pointer;
+	&:hover {
+		animation: anime 16s linear infinite;
+	}
+	&__start {
+		padding: 19px 50px;
+		position: relative;
+	}
+	&__end {
+		left: 0;
+		position: absolute;
+		height: 40px;
+		width: 100%;
+		top: 70%;
+		z-index: -1;
+		filter: blur(40px);
+		opacity: 0.8;
+	}
+}
+@keyframes anime {
+	0% {
+		background-position: 0% 50%
+	}
+	50%{
+		background-position: 100% 50%
+	}
+	100%{
+		background-position: 0% 50%
+	}
+}

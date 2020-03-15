@@ -1,0 +1,131 @@
+@font-face {
+	font-family: 'Exo2';
+	src: url(./assets/fonts/Exo2-Bold.ttf);
+}
+@font-face {
+	font-family: 'Exo2-light';
+	src: url(./assets/fonts/Exo2-Light.ttf);
+}
+@font-face {
+	font-family: 'Nunito';
+	src: url(./assets/fonts/Nunito-Regular.ttf);
+}
+@font-face {
+	font-family: 'Nunito-SemiBold';
+	src: url(./assets/fonts/Nunito-SemiBold.ttf);
+}
+:root {
+	--regType: 'Nunito', sans-serif;
+	--regTypeSemiBold: 'Nunito-SemiBold', sans-serif;
+	--boldType: 'Exo2', sans-serif;
+	--lightType: 'Exo2-light', sans-serif;
+}
+h1 {
+	font-family: var(--boldType);
+	font-size: 66px;
+	line-height: 77px;
+}
+h2 {
+	font-family: var(--boldType);
+	font-size: 48px;
+	line-height: 56px;
+}
+h3 {
+	font-family: var(--boldType);
+	font-size: 36px;
+	line-height: 48px;
+}
+h4 {
+	font-family: var(--boldType);
+	font-size: 32px;
+	line-height: 48px;
+}
+h5 {
+	font-family: var(--boldType);
+	font-size: 23px;
+	line-height: 36px;
+}
+.decorate {
+	position: relative;
+	display: inline;
+	z-index: 1;
+	&:before {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		right: -38px;
+		top: 85px;
+		margin-top: -85px;
+		background-size: cover;
+		content: '';
+		height: 170px;
+		width: 375px;
+		background: url(./assets/images/titleBg.svg);
+		z-index: -1;
+	}
+	&_dark:before {
+		opacity: 0.1;
+	}
+}
+p, span, a {
+	font-family: var(--regType);
+	font-size: 17px;
+	line-height: 28px;
+}
+p.huge {
+	font-size: 23px;
+	line-height: 36px;
+}
+.small {
+	font-size: 14px;
+	line-height: 20px;
+	&_styled {
+		text-transform: uppercase;
+		color: var(--color-denim);
+		position: relative;
+		display: inline;
+		&:before {
+			width: 50px;
+			height: 1px;
+			background-color: var(--color-denim);
+			content: '';
+			position: absolute;
+			left: calc(100% + 20px);
+			top: 50%;
+		}
+	}
+}
+.error {
+	color: var(--color-red);
+}
+a {
+	color: var(--color-denim);
+	line-height: 20px;
+	&:hover {
+		text-decoration: none;
+		color: var(--color-bright-navy-blue);
+	}
+}
+input,
+textarea {
+	font-family: var(--regType);
+	font-size: 17px;
+	&[type="text"] {
+		line-height: 24px;
+	}
+	&[type="checkbox"],
+	&[type="radio"] {
+		+ label {
+			font-family: var(--regType);
+			font-size: 17px;
+			line-height: 20px;
+		}
+	}
+}
+nav {
+	a {
+		font-family: var(--regTypeSemiBold);
+		font-size: 14px;
+		color: var(--color-white);
+	}
+}

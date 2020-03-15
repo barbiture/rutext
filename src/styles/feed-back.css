@@ -1,0 +1,43 @@
+.feed-back {
+	margin-top: 140px;
+	&-wrapper {
+		display: grid;
+		grid-template-rows: minmax(min-content, 284px) minmax(min-content, 624px);
+	}
+	.title {
+		text-align: center;
+		align-self: center;
+		p {
+			margin-top: 31px;
+		}
+	}
+	input[type="text"],
+	input[type="email"] {
+		display: block;
+		margin-bottom: 9px;
+		width: 100%;
+	}
+	textarea {
+		width: 100%;
+		margin-bottom: 20px;
+		height: 165px;
+	}
+	form {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(min-content, 470px));
+		grid-column-gap: 30px;
+		padding: 0 100px;
+	}
+	&-footer {
+		display: grid;
+		grid-template-columns: 264px auto;
+		grid-column-gap: 14px;
+		margin-top: 33px;
+		align-items: center;
+		button {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}

@@ -1,0 +1,63 @@
+.icon {
+	width: 130px;
+	height: 130px;
+	position: relative;
+	cursor: pointer;
+	&__translate {
+		.icon__bottom {
+			mask-image: url(./assets/images/translate.svg);
+		}
+		.icon__top {
+			width: 113px;
+			height: 105px;
+			background-image: url(./assets/images/translate-top.svg);
+		}
+	}
+	&__test {
+		.icon__bottom {
+			mask-image: url(./assets/images/test.svg);
+		}
+		.icon__top {
+			left: 10px;
+			top: 23px;
+			width: 98px;
+			height: 90px;
+			background-image: url(./assets/images/test-top.svg);
+		}
+	}
+    &__bottom {
+    	width: 100%;
+    	height: 100%;
+        
+        background-image: linear-gradient(0deg, var(--color-anti-flash-white), var(--color-anti-flash-white));
+        transition: transform 0.5s ease;
+        z-index: 1;
+        position: relative;
+        &:before {
+        	position: absolute;
+        	 content: "";
+        	 top: 0;
+        	 right: 0;
+        	 bottom: 0;
+        	 left: 0;
+        	 background-image: linear-gradient(0deg, var(--color-bright-cerulean), var(--color-nan-blue));
+        	 z-index: -1;
+        	 transition: opacity 0.5s linear;
+        	 opacity: 0;
+        }
+    	&:hover:before {
+    		opacity: 1
+    	}
+    	&:hover {
+    		transform: scale(1.1);
+    	}
+    }
+    &__top {
+    	z-index: 2;
+		left: 0;
+		top: 0;
+		content: '';
+		position: absolute; 
+		pointer-events: none;
+	}
+}

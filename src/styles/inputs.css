@@ -1,0 +1,36 @@
+.form-field {
+	position: relative;
+	display: inline-block;
+	.error-text {
+		position: absolute;
+		bottom: 2px;
+		right: 5px;
+		white-space: nowrap;
+	}
+}
+input[type="text"],
+input[type="email"],
+textarea {
+	border: solid 1px var(--color-light-gray-alpha);
+	color: var(--color-gunmetal);
+	padding: 18px 15px 15px;
+	border-radius: 2px;
+	box-sizing: border-box;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+	&:focus {
+		outline: none;
+		border-color: var(--color-bright-navy-blue-alpha);
+		&:placeholder {
+			color: var(--color-registration-black);
+		}
+	}
+	&.error {
+		&:placeholder {
+			color: var(--color-registration-black);
+		}
+		border-color: var(--color-red);
+	}
+}

@@ -1,0 +1,46 @@
+-
+	var tileImg = [
+		{
+			'x1':'assets/images/b1.jpg',
+			'x2':'assets/images/b1.jpg',
+		},
+		{
+			'x1':'assets/images/b2.jpg',
+			'x2':'assets/images/b1.jpg',
+		},
+		{
+			'x1':'assets/images/b3.jpg',
+			'x2':'assets/images/b3.jpg',
+		},
+		{
+			'x1':'assets/images/b4.jpg',
+			'x2':'assets/images/b4.jpg',
+		},
+		{
+			'x1':'assets/images/b5.jpg',
+			'x2':'assets/images/b5@2x.jpg',
+		},
+		{
+			'x1':'assets/images/b6.jpg',
+			'x2':'assets/images/b6.jpg',
+		}
+	]
+each pic in tileImg.length ? tileImg : ['There are no values']
+	.tile
+		.tile__image
+			img(src=pic.x1, alt="")
+		.tile__imageX2
+			img(src=pic.x2 ? pic.x2 : pic, alt="")
+		.tile__content
+			p.small
+				| Melsoft / Wargaming
+			h3
+				| Savage Planet
+			p.small
+				| Равным образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия. позиций, занимаемых участниками в отношении поставленных задач.
+			ul
+				- const lists = ['FR, ES, PT-BR, KO и еще 6', '300 200 слов', '5 месяцев'];
+					each list in lists
+						li
+							i
+							p.small= list

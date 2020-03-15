@@ -1,0 +1,10 @@
+#drop-area
+  .file-wrapper
+      img(src="./assets/images/upload.svg", alt="upload file")
+      label.button(for='fileElem') Выберите файлы
+      p
+        | или перетащите их в эту область
+      input#fileElem(type='file' multiple='' accept='image/*')
+      //- #gallery
+      #galleryInfo
+      progress#progress-bar(max='100' value='0')

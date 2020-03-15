@@ -1,0 +1,79 @@
+.footer {
+	background-color: var(--color-footer);
+	color: var(--color-white);
+	display: grid;
+	grid-template-rows: 383px 79px;
+	&-top {
+		margin-top: -30px;
+		padding-top: 111px;
+		background-color: var(--color-footer);
+		.container {
+			display: grid;
+			grid-template-columns: 370px 270px 470px;
+			grid-column-gap: 30px
+		}
+		a {
+			color: var(--color-white);
+			text-decoration: none;
+			font-size: 16px;
+		}
+		li {
+			line-height: 42px;
+			img {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+	.logo {
+		justify-self: center;
+		position: relative;
+		margin-top: 5px;
+		&:after {
+			position: absolute;
+			content: '';
+			width: 308px;
+			height: 247px;
+			background-image: url(./assets/images/logo-decor.svg);
+			left: 50%;
+			top: -50%;
+			transform: translateX(-50%);
+		}
+	}
+	.nav {
+		justify-self: center;
+		padding-left: 30px;
+	}
+	.contacts {
+		justify-self: start;
+		img {
+			margin-right: 21px;
+		}
+		a {
+			/* margin-left: 21px; */
+		}
+	}
+	a.fb-find-us {
+		margin-left: 40px;
+		margin-top: 18px;
+		width: 130px;
+	}
+	&-bottom {
+		align-self: center;
+		&-wrap {
+			margin: 0 100px;
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				top: -30px;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: var(--color-bright-cerulean-alpha);
+			}
+		}
+	}
+}

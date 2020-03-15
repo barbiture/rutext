@@ -1,0 +1,24 @@
+div.re-captcha
+	script.
+		var grecaptchaId;
+		 var errorHandling = function(err) { console.err('reCAPTCHA Error:', err) }
+		 var onloadCallback = function() {
+		   grecaptchaId = grecaptcha.render('myRecaptchaElement', {
+		     'sitekey' : '6Lf8PeEUAAAAAM2VIUTQnyY3P-VsgXRFx8M90AmY',
+		     'size': 'invisible',
+		     'badge': 'inline',
+		     'error-callback': errorHandling,
+		   });
+		 };
+	script(src="https://www.google.com/recaptcha/api.js?render=explicit&onload=onloadCallback")
+	script.
+		const token = '6Lf8PeEUAAAAAM2VIUTQnyY3P-VsgXRFx8M90AmY'
+		console.log('pageload reCAPTCHA token', grecaptcha);
+		//- console.log('pageload reCAPTCHA token', token);
+		grecaptcha.ready(function() {
+
+			grecaptcha.execute('_reCAPTCHA_site_key_', {action: 'homepage'}).then(function(token) {
+			  console.log('pageload reCAPTCHA token', token);
+			});
+		});
+	#myRecaptchaElement.my-recaptcha-element

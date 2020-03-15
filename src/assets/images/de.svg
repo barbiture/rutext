@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #464655;
+      }
+
+      .cls-2 {
+        fill: #ffe15a;
+      }
+
+      .cls-3 {
+        fill: #ff4b55;
+      }
+    </style>
+  </defs>
+  <g id="de" transform="translate(0 -88.276)">
+    <path id="Path_1404" data-name="Path 1404" class="cls-1" d="M20,92.609H0V88.618a.344.344,0,0,1,.345-.342h19.31a.344.344,0,0,1,.345.342v3.991Z"/>
+    <path id="Path_1405" data-name="Path 1405" class="cls-2" d="M19.655,316.242H.345A.344.344,0,0,1,0,315.9v-3.991H20V315.9A.344.344,0,0,1,19.655,316.242Z" transform="translate(0 -214.966)"/>
+    <rect id="Rectangle_133" data-name="Rectangle 133" class="cls-3" width="20" height="4.333" transform="translate(0 92.609)"/>
+  </g>
+</svg>

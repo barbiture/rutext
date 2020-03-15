@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.8" height="24" viewBox="0 0 20.8 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3871d0"/>
+      <stop offset="1" stop-color="#25a9e1"/>
+    </linearGradient>
+  </defs>
+  <path id="checkmark-document" class="cls-1" d="M17.4,1H4.6A1.6,1.6,0,0,0,3,2.6V23.4A1.6,1.6,0,0,0,4.6,25H22.2a1.6,1.6,0,0,0,1.6-1.6V7.4C23.8,5,19.8,1,17.4,1ZM19,14.712l-5.6,5.6a1.6,1.6,0,0,1-2.264,0l-3.2-3.2A1.6,1.6,0,0,1,10.2,14.848l2.072,2.072,4.472-4.472A1.6,1.6,0,0,1,19,14.712ZM19.8,9.2A4.208,4.208,0,0,1,15.6,5a1,1,0,1,1,2,0,2.2,2.2,0,0,0,2.2,2.2,1,1,0,1,1,0,2Z" transform="translate(-3 -1)"/>
+</svg>
